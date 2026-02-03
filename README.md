@@ -10,3 +10,6 @@
 ## Figma
 - CURRENT SPEC 페이지 참고
 # project-design-system
+## Figma (Source of Design)
+- CURRENT SPEC
+- https://figma.com/file/design/vYI2XpqPZpnfPHezZ7TFjA/THE-CORNER?node-id=118-556&t=BisFsu2I1N6l0avn-1
