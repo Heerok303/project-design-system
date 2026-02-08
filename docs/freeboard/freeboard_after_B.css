@@ -1,0 +1,466 @@
+/* 변경 후 B */
+
+box-sizing: border-box;
+
+position: relative;
+width: 593px;
+height: 1139px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+
+/* 자유게시판 */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: relative;
+width: 393px;
+height: 657px;
+left: 100px;
+top: 100px;
+overflow-y: scroll;
+
+background: #FFFFFF;
+
+
+/* Status Bar */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 112px;
+
+width: 393px;
+height: 54px;
+
+background: #FFFFFF;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Time */
+
+width: 140.5px;
+height: 54px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Time */
+
+position: absolute;
+left: 37.67%;
+right: 38.13%;
+top: 33.96%;
+bottom: 30.85%;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 19px */
+
+color: #121212;
+
+
+
+/* Levels */
+
+width: 140.5px;
+height: 54px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Battery */
+
+position: absolute;
+left: 57.65%;
+right: 22.9%;
+top: 42.59%;
+bottom: 33.33%;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px/2 + 23.25px);
+top: 42.59%;
+bottom: 33.33%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #000000;
+border-radius: 4.3px;
+
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px/2 + 37.41px);
+top: 51.45%;
+bottom: 41.01%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px/2 + 23.25px);
+top: 46.3%;
+bottom: 37.04%;
+
+background: #000000;
+border-radius: 2.5px;
+
+
+/* Wifi */
+
+position: absolute;
+width: 17.14px;
+left: calc(50% - 17.14px/2 - 4.98px);
+top: 43.77%;
+bottom: 33.4%;
+
+background: #000000;
+
+
+/* Cellular Connection */
+
+position: absolute;
+width: 19.2px;
+left: calc(50% - 19.2px/2 - 30.65px);
+top: 43.58%;
+bottom: 33.77%;
+
+background: #000000;
+
+
+/* Top Navigation */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 16px;
+gap: 252px;
+
+width: 393px;
+height: 36px;
+
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Gym Name */
+
+width: 183px;
+height: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 20px */
+text-align: center;
+
+color: #D93434;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+width: 112px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Search Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Search 2 */
+
+position: absolute;
+width: 21px;
+height: 21px;
+left: 2px;
+top: 1px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 4.17%;
+top: 4.17%;
+bottom: 8.33%;
+
+/* Primary */
+border: 1.5px solid #2D264B;
+
+
+/* Profile Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Profile Square */
+
+position: absolute;
+width: 19.5px;
+height: 19.5px;
+left: 2.25px;
+top: 2.25px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 9.38%;
+right: 9.38%;
+top: 9.38%;
+bottom: 9.38%;
+
+/* Primary */
+background: #2D264B;
+
+
+/* Hicon / Linear / Setting */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Setting */
+
+position: absolute;
+width: 19.13px;
+height: 21.19px;
+left: 2.44px;
+top: 1.41px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.15%;
+right: 10.15%;
+top: 5.86%;
+bottom: 5.86%;
+
+border: 1.5px solid #101828;
+
+
+/* Home Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+gap: 12px;
+isolation: isolate;
+
+width: 393px;
+height: 144px;
+
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(스크린샷 2025-10-30 오후 4.14.25.png);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Info */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 209px;
+height: 48px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Logo */
+
+box-sizing: border-box;
+
+width: 48px;
+height: 48px;
+
+background: url(20251102_1842_모던 링 코너 로고_simple_compose_01k91z31xff88v13jv6ny81w0n.png);
+border: 1px solid rgba(18, 18, 18, 0.15);
+border-radius: 100px;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Info */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 153px;
+height: 46px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 한국위너복식하남미사점 */
+
+width: 153px;
+height: 22px;
+
+/* Mobile/Body/15_B
+
+본문 내 강조 (키워드_숫자)
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+/* 상자 높이와 동일 또는 147% */
+letter-spacing: 0.005em;
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 관장 : 김치호 */
+
+width: 70px;
+height: 16px;
+
+/* Mobile/Label/13_M
+
+칩,상태값,필드 라벨
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* 상자 높이와 동일 또는 123% */
+letter-spacing: 0.005em;
+
+color: rgba(255, 255, 255, 0.6);
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+/* (이하 내용도 너가 붙여준 “변경 후 B” 원문 그대로 이어짐) */
