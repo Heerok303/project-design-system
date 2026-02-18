@@ -1,11 +1,15 @@
 # project-design-system
 
-이 레포는 이 프로젝트의 **디자인 기준 저장소**입니다.
+이 레포는 **디자인 기준(Design Source of Truth)** 저장소입니다.
 
-## 사용 원칙
-- Figma는 참고용
-- 실제 기준은 GitHub 문서 기준
-- 디자인 변경은 기록으로 남긴다
+## 원칙
+- Figma는 참고용(Source)
+- **실제 기준은 GitHub 문서 기준**
+- 디자인 변경은 반드시 기록으로 남긴다(CHANGELOG)
+
+## 문서 구조
+- `docs/spec/` : 화면/컴포넌트 스펙 (최종 기준)
+- `docs/CHANGELOG.md` : 변경 기록
 
 ## Figma
 - CURRENT SPEC 페이지 참고
