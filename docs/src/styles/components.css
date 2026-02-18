@@ -1,0 +1,257 @@
+.fixedTop{
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 110px;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(234,236,240,0.9);
+  z-index: 10;
+}
+
+.statusBar{
+  height: 54px;
+  position: relative;
+}
+.statusTime{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 110%;
+  color: #121212;
+}
+.statusIcons{ display: none; } /* 필요하면 구현 */
+
+.topNav{
+  height: 56px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.topNav__title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.topNav__actions{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconBtn{
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.chipBtn{
+  height: 24px;
+  padding: 3px 8px;
+  border-radius: var(--r-6);
+  border: 1px solid #191F28;
+  background: linear-gradient(180deg, var(--brand) 0%, var(--brand-dark) 100%);
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.section{ display: flex; flex-direction: column; gap: 10px; }
+.section--p16{ padding: 16px; }
+
+.sectionHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionHeader__title{
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+}
+.sectionHeader__more{
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-8);
+  padding: 16px;
+}
+.card--center{
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+}
+
+.primaryPill{
+  height: 44px;
+  padding: 6px 38px;
+  border-radius: var(--r-30);
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: var(--shadow-float);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  cursor: pointer;
+}
+
+.infoCard{
+  background: var(--card);
+  border-radius: 7px;
+  padding: 16px;
+}
+.infoCard__title{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+}
+.infoCard__desc{
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-sub);
+}
+
+.carousel{
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.videoCard{
+  width: 361px;
+  border-radius: var(--r-12);
+  overflow: hidden;
+  flex: 0 0 auto;
+  border: 1px solid var(--border-soft);
+}
+.videoCard__thumb{
+  height: 132px;
+  position: relative;
+  background: #d0d5dd; /* 썸네일 대체 */
+}
+.videoCard__duration{
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  height: 24px;
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+.videoCard__play{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.videoCard__info{
+  padding: 8px;
+  display: grid;
+  gap: 4px;
+}
+.videoCard__title{
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+.videoCard__meta{
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--muted);
+}
+
+.sectionTitleCenter{
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--text);
+  text-align: center;
+}
+
+.embed{
+  width: 361px;
+  height: 211px;
+  border-radius: var(--r-12);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  background: #f2f4f7;
+  display: grid;
+  place-items: center;
+}
+.embed__placeholder{
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.tabBar{
+  position: absolute;
+  left: 0; right: 0; bottom: 21px;
+  height: 44px;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid rgba(234,236,240,0.9);
+}
+.tabItem{
+  flex: 1;
+  border: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  padding: 4px 18px 0;
+  cursor: pointer;
+}
+.tabItem__label{
+  font-size: 11px;
+  line-height: 110%;
+  color: var(--text);
+}
+.tabItem--active .tabItem__label{
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.homeIndicator{
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 21px;
+  backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+}
+.homeIndicator__bar{
+  width: 139px;
+  height: 5px;
+  border-radius: 999px;
+  background: #000;
+}
