@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TheCorner - Home</title>
+
+  <link rel="stylesheet" href="./styles/tokens.css" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+  <link rel="stylesheet" href="./styles/pages/home.css" />
+</head>
+<body>
+  <main class="appFrame">
+    <section class="phone">
+
+      <!-- Fixed Top -->
+      <header class="fixedTop">
+        <div class="statusBar">
+          <div class="statusTime">12:34</div>
+          <div class="statusIcons">⋯</div>
+        </div>
+
+        <div class="topNav">
+          <div class="topNav__title">Gym Name</div>
+
+          <div class="topNav__actions">
+            <button class="chipBtn">회원가입</button>
+            <button class="iconBtn" aria-label="notification">🔔</button>
+            <button class="iconBtn" aria-label="search">🔎</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Body -->
+      <div class="pageBody">
+        <!-- GYM register -->
+        <section class="section section--p16">
+          <div class="card card--center">
+            <button class="primaryPill">체육관 등록하기</button>
+          </div>
+
+          <div class="infoCard">
+            <div class="infoCard__title">체육관 찾기</div>
+            <p class="infoCard__desc">
+              일반 사용자를 위한 체육관 찾기 입니다. 다니시는 체육관을 등록해주세요.
+              공지사항과 대회 일정을 확인 하실 수 있습니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- HOT -->
+        <section class="section section--p16">
+          <div class="sectionHeader">
+            <div class="sectionHeader__title">지금 HOT 게시글</div>
+            <a class="sectionHeader__more" href="#">더보기</a>
+          </div>
+
+          <div class="carousel">
+            <article class="videoCard">
+              <div class="videoCard__thumb">
+                <span class="videoCard__duration">13:50</span>
+                <span class="videoCard__play">▶</span>
+              </div>
+              <div class="videoCard__info">
+                <div class="videoCard__title">카드 제목</div>
+                <div class="videoCard__meta">시간 · 조회수 · 태그</div>
+              </div>
+            </article>
+
+            <article class="videoCard">
+              <div class="videoCard__thumb">
+                <span class="videoCard__duration">09:10</span>
+                <span class="videoCard__play">▶</span>
+              </div>
+              <div class="videoCard__info">
+                <div class="videoCard__title">카드 제목</div>
+                <div class="videoCard__meta">시간 · 조회수 · 태그</div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Youtube -->
+        <section class="section section--p16">
+          <div class="sectionTitleCenter">지금 HOT 영상</div>
+          <div class="embed">
+            <div class="embed__placeholder">YouTube Embed (361×211)</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Tab Bar -->
+      <nav class="tabBar">
+        <button class="tabItem tabItem--active">
+          <span class="tabItem__icon">⌂</span>
+          <span class="tabItem__label">홈</span>
+        </button>
+        <button class="tabItem">
+          <span class="tabItem__icon">♡</span>
+          <span class="tabItem__label">찜</span>
+        </button>
+        <button class="tabItem">
+          <span class="tabItem__icon">⚙</span>
+          <span class="tabItem__label">설정</span>
+        </button>
+      </nav>
+
+      <div class="homeIndicator">
+        <div class="homeIndicator__bar"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
