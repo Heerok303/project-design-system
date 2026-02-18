@@ -1,0 +1,32 @@
+:root{
+  /* Canvas */
+  --canvas-bg: #444444;
+  --phone-bg: #ffffff;
+
+  /* Colors */
+  --text: #101828;
+  --text-sub: #4A5565;
+  --muted: #475467;
+
+  --border: rgba(18, 18, 18, 0.15);
+  --border-soft: #EAECF0;
+
+  --brand: #D93434;
+  --brand-dark: #731C1C;
+
+  --card: #F9FAFB;
+
+  /* Radius */
+  --r-6: 6px;
+  --r-8: 8px;
+  --r-12: 12px;
+  --r-30: 30px;
+
+  /* Shadow */
+  --shadow-float: 0px 9px 28px 8px rgba(0,0,0,0.05),
+                  0px 3px 6px -4px rgba(0,0,0,0.12),
+                  0px 6px 16px rgba(0,0,0,0.08);
+
+  /* Typo */
+  --font: system-ui, -apple-system, "Noto Sans KR", "Pretendard", sans-serif;
+}
