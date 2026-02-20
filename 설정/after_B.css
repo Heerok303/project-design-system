@@ -1,0 +1,1080 @@
+box-sizing: border-box;
+
+position: relative;
+width: 593px;
+height: 1139px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+
+/* 설정 */
+
+position: relative;
+width: 393px;
+height: 939px;
+left: 106px;
+top: 89px;
+
+background: #FFFFFF;
+
+
+/* Settings Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+
+position: absolute;
+width: 393px;
+height: 232px;
+left: calc(50% - 393px/2);
+top: 110px;
+
+
+
+/* List */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 286px;
+
+width: 361px;
+height: 50px;
+min-height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 프로필 카드 */
+
+width: 73px;
+height: 22px;
+
+/* Mobile/Body/15
+
+디폴트
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* 상자 높이와 동일 또는 147% */
+letter-spacing: 0.005em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dot */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 8px;
+height: 8px;
+
+/* System Colors/Warning */
+background: #D93434;
+border-radius: 99px;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Touch box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px;
+gap: 10px;
+
+width: 40px;
+height: 40px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #2D264B;
+border-radius: 3px;
+
+
+/* List */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 286px;
+
+width: 361px;
+height: 50px;
+min-height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 테마 */
+
+width: 28px;
+height: 22px;
+
+/* Mobile/Body/15
+
+디폴트
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* 상자 높이와 동일 또는 147% */
+letter-spacing: 0.005em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dot */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 8px;
+height: 8px;
+
+/* System Colors/Warning */
+background: #D93434;
+border-radius: 99px;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Touch box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px;
+gap: 10px;
+
+width: 40px;
+height: 40px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #2D264B;
+border-radius: 3px;
+
+
+/* List */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 286px;
+
+width: 361px;
+height: 50px;
+min-height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Marketing Consent */
+
+width: 59px;
+height: 22px;
+
+/* Mobile/Body/15
+
+디폴트
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* 상자 높이와 동일 또는 147% */
+letter-spacing: 0.005em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dot */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 8px;
+height: 8px;
+
+/* System Colors/Warning */
+background: #D93434;
+border-radius: 99px;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Touch box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px;
+gap: 10px;
+
+width: 40px;
+height: 40px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #2D264B;
+border-radius: 3px;
+
+
+/* List */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 286px;
+
+width: 361px;
+height: 50px;
+min-height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Marketing Terms */
+
+width: 173px;
+height: 22px;
+
+/* Mobile/Body/15
+
+디폴트
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* 상자 높이와 동일 또는 147% */
+letter-spacing: 0.005em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Dot */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 8px;
+height: 8px;
+
+/* System Colors/Warning */
+background: #D93434;
+border-radius: 99px;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Touch box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px;
+gap: 10px;
+
+width: 40px;
+height: 40px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #2D264B;
+border-radius: 3px;
+
+
+/* Tab Bar Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 393px;
+height: 69px;
+left: 0px;
+bottom: 0px;
+
+background: #FFFFFF;
+
+
+/* Tab Bar */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 393px;
+height: 48px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 48px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Icon/Home Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 18px;
+height: 19px;
+left: calc(50% - 18px/2);
+top: calc(50% - 19px/2 - 0.5px);
+
+border: 2px solid #101828;
+
+
+/* Label */
+
+width: 11px;
+height: 16px;
+
+/* Mobile/Label/11
+
+시간/거리/조회수/태그
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+/* 상자 높이와 동일 또는 145% */
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 48px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Heart Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Heart 3 */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 2px;
+top: 3px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.5px solid #101828;
+
+
+/* Label */
+
+width: 44px;
+height: 16px;
+
+/* Mobile/Label/11
+
+시간/거리/조회수/태그
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+/* 상자 높이와 동일 또는 145% */
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 48px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Hicon / Bold / Setting */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Setting */
+
+position: absolute;
+width: 20.63px;
+height: 22.69px;
+left: 1.68px;
+top: 0.66px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.01%;
+right: 7.02%;
+top: 2.73%;
+bottom: 2.73%;
+
+background: #D93434;
+
+
+/* Label */
+
+width: 21px;
+height: 16px;
+
+/* Mobile/Label/11_M
+
+배지/캡슐
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+/* 상자 높이와 동일 또는 145% */
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #D93434;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home indicator */
+
+width: 393px;
+height: 21px;
+overflow-y: scroll;
+
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home Indicator */
+
+position: absolute;
+width: 139px;
+height: 5px;
+left: calc(50% - 139px/2);
+bottom: 8px;
+
+background: #000000;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Fixed Top */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 393px;
+height: 110px;
+left: calc(50% - 393px/2);
+top: 0px;
+
+background: #D93434;
+
+
+/* Status Bar */
+
+width: 393px;
+height: 54px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Time */
+
+position: absolute;
+height: 54px;
+left: 0%;
+right: 64.25%;
+top: calc(50% - 54px/2);
+
+
+
+/* Time */
+
+position: absolute;
+left: 37.67%;
+right: 38.13%;
+top: 33.96%;
+bottom: 30.85%;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 19px */
+
+color: #FFFFFF;
+
+
+
+/* Levels */
+
+position: absolute;
+height: 54px;
+left: 64.25%;
+right: 0%;
+top: calc(50% - 54px/2);
+
+
+
+/* Battery */
+
+position: absolute;
+left: 57.65%;
+right: 22.9%;
+top: 42.59%;
+bottom: 33.33%;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px/2 + 23.25px);
+top: 42.59%;
+bottom: 33.33%;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #FFFFFF;
+border-radius: 4.3px;
+
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px/2 + 37.41px);
+top: 51.45%;
+bottom: 41.01%;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px/2 + 23.25px);
+top: 46.3%;
+bottom: 37.04%;
+
+background: #FFFFFF;
+border-radius: 2.5px;
+
+
+/* Wifi */
+
+position: absolute;
+width: 17.14px;
+left: calc(50% - 17.14px/2 - 4.98px);
+top: 43.77%;
+bottom: 33.4%;
+
+background: #FFFFFF;
+
+
+/* Cellular Connection */
+
+position: absolute;
+width: 19.2px;
+left: calc(50% - 19.2px/2 - 30.65px);
+top: 43.59%;
+bottom: 33.77%;
+
+background: #FFFFFF;
+
+
+/* Top Navigation */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+width: 64px;
+height: 56px;
+
+background: #D93434;
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 32px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Back Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Page Title */
+
+width: 32px;
+height: 24px;
+
+/* Mobile/Heading/17_B
+
+카드 제목, 섹션 타이틀, 리스트 그룹타이틀
+
+*/
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+/* 상자 높이와 동일 또는 141% */
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Edit 2 */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
