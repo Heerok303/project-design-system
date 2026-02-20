@@ -1,0 +1,1260 @@
+box-sizing: border-box;
+
+position: relative;
+width: 593px;
+height: 1139px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+
+/* 설정 프로필 카드 */
+
+position: relative;
+width: 393px;
+height: 939px;
+left: 100px;
+top: 100px;
+
+background: #FFFFFF;
+
+
+/* Change container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 16px;
+gap: 10px;
+
+position: absolute;
+width: 393px;
+height: 230px;
+left: calc(50% - 393px/2);
+top: 373px;
+
+background: #F9FAFB;
+
+
+/* Change info */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px;
+gap: 10px;
+
+width: 361px;
+height: 34px;
+
+border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 체급을 변경해주세요 */
+
+margin: 0 auto;
+width: 129px;
+height: 17px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 17px */
+text-align: center;
+
+color: #99A1AF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #2D264B;
+border-radius: 3px;
+
+
+/* Change info */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px;
+gap: 10px;
+
+width: 361px;
+height: 34px;
+
+border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 프로필 사진을 변경해주세요 */
+
+margin: 0 auto;
+width: 174px;
+height: 17px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 17px */
+text-align: center;
+
+color: #99A1AF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #101828;
+border-radius: 3px;
+
+
+/* Change info */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px;
+gap: 10px;
+
+width: 361px;
+height: 34px;
+
+border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 경력을 변경해주세요 */
+
+margin: 0 auto;
+width: 129px;
+height: 17px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 17px */
+text-align: center;
+
+color: #99A1AF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #101828;
+border-radius: 3px;
+
+
+/* Change info */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px;
+gap: 10px;
+
+width: 361px;
+height: 34px;
+
+border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* (1)해시태그를 변경해주세요 */
+
+margin: 0 auto;
+width: 174px;
+height: 17px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 17px */
+
+color: #99A1AF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #101828;
+border-radius: 3px;
+
+
+/* Change info */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 0px;
+gap: 10px;
+
+width: 361px;
+height: 34px;
+
+border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* (2)해시태그를 변경해주세요 */
+
+margin: 0 auto;
+width: 174px;
+height: 17px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 17px */
+
+color: #99A1AF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Hicon / Linear / Right 2 */
+
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Right 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.5px solid #101828;
+border-radius: 3px;
+
+
+/* Container */
+
+position: absolute;
+width: 393px;
+height: 174px;
+left: calc(50% - 393px/2);
+top: 179px;
+
+background: url(스크린샷 2025-10-30 오후 4.14.25.png);
+
+
+/* Logo */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 120px;
+height: 120px;
+left: 137px;
+top: -56px;
+
+background: url(20251102_1842_모던 링 코너 로고_simple_compose_01k91z31xff88v13jv6ny81w0n.png);
+border: 1px solid rgba(18, 18, 18, 0.15);
+border-radius: 8px;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 98px;
+height: 24px;
+left: 148px;
+top: 140px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* Name Tag */
+
+width: 88px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 43px;
+height: 24px;
+left: 8px;
+top: 103px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* Boxer Tag */
+
+width: 33px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 67px;
+height: 24px;
+left: 318px;
+top: 25px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* Gym Tag */
+
+width: 57px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 40px;
+height: 24px;
+left: 318px;
+top: 64px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* #----- */
+
+width: 30px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 40px;
+height: 24px;
+left: 318px;
+top: 103px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* #----- */
+
+width: 30px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 38px;
+height: 24px;
+left: 8px;
+top: 25px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* #3년 */
+
+width: 28px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px;
+gap: 10px;
+
+position: absolute;
+width: 49px;
+height: 24px;
+left: 8px;
+top: 64px;
+
+background: rgba(255, 255, 255, 0.35);
+border-radius: 8px;
+
+
+/* #79kg */
+
+width: 39px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #4A5565;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Top Navigation */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 16px;
+gap: 10px;
+
+position: absolute;
+height: 44px;
+left: 0px;
+right: 0px;
+top: 54px;
+
+background: #D93434;
+
+
+/* Icon Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Back Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Left 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 3px solid #FFFFFF;
+border-radius: 3px;
+
+
+/* 프로필 카드 */
+
+width: 98px;
+height: 22px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 22px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Status Bar */
+
+position: absolute;
+width: 393px;
+height: 54px;
+left: calc(50% - 393px/2);
+top: 0px;
+
+background: #D93434;
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+
+/* Time */
+
+position: absolute;
+height: 54px;
+left: 0%;
+right: 64.25%;
+top: calc(50% - 54px/2);
+
+
+
+/* Time */
+
+position: absolute;
+left: 37.67%;
+right: 38.13%;
+top: 33.96%;
+bottom: 30.85%;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 19px */
+
+color: #FFFFFF;
+
+
+
+/* Levels */
+
+position: absolute;
+height: 54px;
+left: 64.25%;
+right: 0%;
+top: calc(50% - 54px/2);
+
+
+
+/* Battery */
+
+position: absolute;
+left: 57.65%;
+right: 22.9%;
+top: 42.59%;
+bottom: 33.33%;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px/2 + 23.25px);
+top: 42.59%;
+bottom: 33.33%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #000000;
+border-radius: 4.3px;
+
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px/2 + 37.41px);
+top: 51.45%;
+bottom: 41.01%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px/2 + 23.25px);
+top: 46.3%;
+bottom: 37.04%;
+
+background: #FFFFFF;
+border-radius: 2.5px;
+
+
+/* Wifi */
+
+position: absolute;
+width: 17.14px;
+left: calc(50% - 17.14px/2 - 4.98px);
+top: 43.77%;
+bottom: 33.4%;
+
+background: #FFFFFF;
+
+
+/* Cellular Connection */
+
+position: absolute;
+width: 19.2px;
+left: calc(50% - 19.2px/2 - 30.65px);
+top: 43.59%;
+bottom: 33.77%;
+
+background: #FFFFFF;
+
+
+/* Tab Bar Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 393px;
+height: 65px;
+left: 0px;
+bottom: 0px;
+
+background: #FFFFFF;
+
+
+/* Tab Bar */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 393px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Icon/Home Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 18px;
+height: 19px;
+left: calc(50% - 18px/2);
+top: calc(50% - 19px/2 - 0.5px);
+
+border: 2px solid #101828;
+
+
+/* Label */
+
+width: 10px;
+height: 12px;
+
+/* Default/Single/Regular/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Heart Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Heart 3 */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 2px;
+top: 3px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.5px solid #101828;
+
+
+/* Label */
+
+width: 41px;
+height: 12px;
+
+/* Default/Single/Regular/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Hicon / Bold / Setting */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Setting */
+
+position: absolute;
+width: 20.63px;
+height: 22.69px;
+left: 1.68px;
+top: 0.66px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 7.01%;
+right: 7.02%;
+top: 2.73%;
+bottom: 2.73%;
+
+background: #D93434;
+
+
+/* Label */
+
+width: 20px;
+height: 12px;
+
+/* Default/Single/Bold/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #D93434;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home indicator */
+
+width: 393px;
+height: 21px;
+overflow-y: scroll;
+
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home Indicator */
+
+position: absolute;
+width: 139px;
+height: 5px;
+left: calc(50% - 139px/2);
+bottom: 8px;
+
+background: #000000;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
