@@ -1,0 +1,901 @@
+box-sizing: border-box;
+
+position: relative;
+width: 593px;
+height: 1139px;
+
+background: #444444;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 2px;
+
+
+/* 내체육관 멤버 눌렀을때 */
+
+position: relative;
+width: 393px;
+height: 943px;
+left: 100px;
+top: 100px;
+
+background: #FFFFFF;
+
+
+/* Top Navigation */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px;
+gap: 10px;
+
+position: absolute;
+height: 24px;
+left: 0px;
+right: 0px;
+top: 64px;
+
+background: #FFFFFF;
+
+
+/* Icon Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Back Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Left 2 */
+
+position: absolute;
+width: 4px;
+height: 10px;
+left: 10px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 3px solid #101828;
+border-radius: 3px;
+
+
+/* Member Name */
+
+width: 56px;
+height: 22px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 22px */
+text-align: center;
+letter-spacing: 0.395508px;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Container */
+
+position: absolute;
+width: 393px;
+height: 174px;
+left: calc(50% - 393px/2);
+top: 178px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url(스크린샷 2025-10-30 오후 4.14.25.png);
+
+
+/* Logo */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 120px;
+height: 120px;
+left: 137px;
+top: -56px;
+
+background: url(20251102_1842_모던 링 코너 로고_simple_compose_01k91z31xff88v13jv6ny81w0n.png);
+border: 1px solid rgba(18, 18, 18, 0.15);
+border-radius: 8px;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 116px;
+height: 24px;
+left: calc(50% - 116px/2 + 0.5px);
+top: 140px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 100px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 52px;
+height: 24px;
+left: calc(50% - 52px/2 + 0.5px);
+top: 108px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 36px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 49px;
+height: 24px;
+left: 8px;
+top: 103px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 33px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 73px;
+height: 24px;
+left: 318px;
+top: 25px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 57px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 42px;
+height: 24px;
+left: 318px;
+top: 64px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 26px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 42px;
+height: 24px;
+left: 318px;
+top: 103px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 26px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 44px;
+height: 24px;
+left: 8px;
+top: 25px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 28px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coach box */
+
+box-sizing: border-box;
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5px 8px;
+gap: 10px;
+
+position: absolute;
+width: 57px;
+height: 24px;
+left: 8px;
+top: 64px;
+
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+
+
+/* Tag */
+
+width: 41px;
+height: 14px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 110%;
+/* 또는 14px */
+
+color: #FFFFFF;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Status Bar */
+
+position: absolute;
+width: 393px;
+height: 54px;
+left: calc(50% - 393px/2);
+top: 0px;
+
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+
+/* Time */
+
+position: absolute;
+height: 54px;
+left: 0%;
+right: 64.25%;
+top: calc(50% - 54px/2);
+
+
+
+/* Time */
+
+position: absolute;
+left: 37.67%;
+right: 38.13%;
+top: 33.96%;
+bottom: 30.85%;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 110%;
+/* 상자 높이와 동일 또는 19px */
+
+color: #121212;
+
+
+
+/* Levels */
+
+position: absolute;
+height: 54px;
+left: 64.25%;
+right: 0%;
+top: calc(50% - 54px/2);
+
+
+
+/* Battery */
+
+position: absolute;
+left: 57.65%;
+right: 22.9%;
+top: 42.59%;
+bottom: 33.33%;
+
+
+
+/* Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+left: calc(50% - 25px/2 + 23.25px);
+top: 42.59%;
+bottom: 33.33%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.35;
+border: 1px solid #000000;
+border-radius: 4.3px;
+
+
+/* Cap */
+
+position: absolute;
+width: 1.33px;
+left: calc(50% - 1.33px/2 + 37.41px);
+top: 51.45%;
+bottom: 41.01%;
+
+background: #000000;
+mix-blend-mode: normal;
+opacity: 0.4;
+
+
+/* Capacity */
+
+position: absolute;
+width: 21px;
+left: calc(50% - 21px/2 + 23.25px);
+top: 46.3%;
+bottom: 37.04%;
+
+background: #000000;
+border-radius: 2.5px;
+
+
+/* Wifi */
+
+position: absolute;
+width: 17.14px;
+left: calc(50% - 17.14px/2 - 4.98px);
+top: 43.77%;
+bottom: 33.4%;
+
+background: #000000;
+
+
+/* Cellular Connection */
+
+position: absolute;
+width: 19.2px;
+left: calc(50% - 19.2px/2 - 30.65px);
+top: 43.58%;
+bottom: 33.77%;
+
+background: #000000;
+
+
+/* Tab Bar Container */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 393px;
+height: 65px;
+left: 0px;
+bottom: 0px;
+
+background: #FFFFFF;
+
+
+/* Tab Bar */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 393px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Icon/Home Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 18px;
+height: 19px;
+left: calc(50% - 18px/2);
+top: calc(50% - 19px/2 - 0.5px);
+
+border: 2px solid #101828;
+
+
+/* Label */
+
+width: 10px;
+height: 12px;
+
+/* Default/Single/Regular/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Heart Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Heart 3 */
+
+position: absolute;
+width: 20px;
+height: 18px;
+left: 2px;
+top: 3px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.5px solid #D93434;
+
+
+/* Label */
+
+width: 41px;
+height: 12px;
+
+/* Default/Single/Regular/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #D93434;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Nav Menu */
+
+/* 오토레이아웃 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 18px 0px;
+gap: 4px;
+
+width: 131px;
+height: 44px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Setting */
+
+position: absolute;
+width: 19.13px;
+height: 21.19px;
+left: 2.44px;
+top: 1.41px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.16%;
+right: 10.15%;
+top: 5.86%;
+bottom: 5.86%;
+
+border: 1.5px solid #101828;
+
+
+/* Label */
+
+width: 20px;
+height: 12px;
+
+/* Default/Single/Bold/C/2 */
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 110%;
+/* 또는 12px */
+text-align: center;
+
+color: #101828;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home indicator */
+
+width: 393px;
+height: 21px;
+overflow-y: scroll;
+
+backdrop-filter: blur(6px);
+/* 참고: 배경 필터는 최소한의 브라우저만 지원합니다 */
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home Indicator */
+
+position: absolute;
+width: 139px;
+height: 5px;
+left: calc(50% - 139px/2);
+bottom: 8px;
+
+background: #000000;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
