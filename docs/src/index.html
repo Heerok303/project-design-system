@@ -111,5 +111,27 @@
       </div>
     </section>
   </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabItems = document.querySelectorAll('.tabItem');
+      
+      tabItems.forEach(item => {
+        item.addEventListener('click', () => {
+          // 1. Remove active state from all tabs
+          tabItems.forEach(t => t.classList.remove('tabItem--active'));
+          
+          // 2. Set current tab to active
+          item.classList.add('tabItem--active');
+          
+          // 3. Trigger jello animation
+          // Remove class first to reset animation, use void offsetWidth to trigger reflow
+          item.classList.remove('jello-animate');
+          void item.offsetWidth;
+          item.classList.add('jello-animate');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

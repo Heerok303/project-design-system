@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE CORNER - 배너 2종 (홍보 + 내용)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 40px 20px;
+      min-height: 100vh;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    /* 배너 라벨 */
+    .banner-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .banner-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      padding: 6px 20px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+
+    .banner-label .sub {
+      font-weight: 400;
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+      margin-left: 6px;
+    }
+
+    /* ============================================
+       공통 배너 프레임: 600x1800 → 380x1140
+       ============================================ */
+    .banner {
+      width: 380px;
+      height: 1140px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    /* ============================================
+       A. 홍보배너 (PROMO)
+       ============================================ */
+    .banner-promo {
+      background: #000;
+      padding: 32px 28px;
+    }
+
+    /* 배경 빛줄기 효과 */
+    .promo-bg-glow {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(255,45,45,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .promo-bg-glow-bottom {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(255,45,45,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* 코너 장식 */
+    .corner-deco {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+    }
+    .corner-deco.tl { top: 10px; left: 10px; border-top: 1px solid rgba(255,45,45,0.12); border-left: 1px solid rgba(255,45,45,0.12); }
+    .corner-deco.br { bottom: 10px; right: 10px; border-bottom: 1px solid rgba(255,45,45,0.12); border-right: 1px solid rgba(255,45,45,0.12); }
+
+    .promo-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 로고 */
+    .promo-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 60px;
+      letter-spacing: 7px;
+      color: #FF2D2D;
+      line-height: 1;
+      text-shadow: 0 0 60px rgba(255,45,45,0.3);
+      margin-bottom: 6px;
+    }
+
+    .promo-logo-divider {
+      width: 32px;
+      height: 2px;
+      background: #FF2D2D;
+      margin-bottom: 8px;
+    }
+
+    .promo-logo-icon {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 6px;
+    }
+
+    .promo-logo-sub {
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
+
+    /* CTA 메인 문구 */
+    .promo-cta-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      margin-bottom: 30px;
+    }
+
+    .promo-cta-line {
+      font-size: 28px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .promo-cta-plus {
+      font-size: 30px;
+      font-weight: 900;
+      color: #FF2D2D;
+    }
+
+    .promo-cta-highlight {
+      font-size: 34px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      line-height: 1.4;
+      position: relative;
+    }
+
+    .promo-cta-highlight .underline-deco {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: rgba(255,45,45,0.25);
+      border-radius: 2px;
+    }
+
+    /* 경품 카드 */
+    .promo-prizes {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .promo-prize {
+      flex: 1;
+      background: #1A1A1A;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .promo-prize-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      align-self: flex-start;
+    }
+
+    .promo-prize-img {
+      width: 100%;
+      height: 120px;
+      background: #2A2A2A;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .promo-prize-name {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* 참여 유도 */
+    .promo-guide-hint {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 12px 20px;
+      margin-bottom: 24px;
+    }
+
+    .promo-guide-hint-icon {
+      font-size: 18px;
+    }
+
+    .promo-guide-hint-text {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.5;
+    }
+
+    .promo-guide-hint-text strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* 하단 QR + 스토어 */
+    .promo-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .promo-qr {
+      width: 64px;
+      height: 64px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .promo-store-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .promo-store-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 8px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .promo-store-btn svg {
+      width: 10px;
+      height: 10px;
+      fill: rgba(255,255,255,0.7);
+    }
+
+    .promo-brand-bottom {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.25);
+      margin-top: 4px;
+    }
+
+    .promo-event-name {
+      font-size: 8px;
+      color: rgba(255,255,255,0.2);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+
+    /* ============================================
+       B. 내용배너 (INFO)
+       ============================================ */
+    .banner-info {
+      background: #FFFFFF;
+      padding: 32px 24px;
+    }
+
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 상단 로고 (작게) */
+    .info-top-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 4px;
+      color: #FF2D2D;
+      margin-bottom: 4px;
+    }
+
+    .info-top-divider {
+      width: 24px;
+      height: 2px;
+      background: #FF2D2D;
+      margin-bottom: 20px;
+    }
+
+    /* 타이틀 */
+    .info-title {
+      font-size: 24px;
+      font-weight: 900;
+      color: #111;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    /* 자격요건 박스 */
+    .info-qualification {
+      width: 100%;
+      background: #F7F7F8;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 28px;
+    }
+
+    .info-qual-title {
+      font-size: 14px;
+      font-weight: 900;
+      color: #111;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-qual-badge {
+      background: #FF2D2D;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .info-qual-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .info-qual-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .info-qual-dot {
+      width: 5px;
+      height: 5px;
+      background: #FF2D2D;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    /* 참여 방법 */
+    .info-method-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: #111;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* 스텝 카드 */
+    .info-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .info-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: #F7F7F8;
+      border-radius: 14px;
+      padding: 16px;
+      position: relative;
+    }
+
+    .info-step-number {
+      width: 36px;
+      height: 36px;
+      background: #FF2D2D;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .info-step-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .info-step-label {
+      font-size: 9px;
+      font-weight: 700;
+      color: #FF2D2D;
+      letter-spacing: 1px;
+    }
+
+    .info-step-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: #111;
+    }
+
+    .info-step-desc {
+      font-size: 10px;
+      font-weight: 500;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    .info-step-visual {
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 스텝 사이 연결선 */
+    .info-step-connector {
+      width: 2px;
+      height: 14px;
+      background: #E0E0E0;
+      margin-left: 40px;
+    }
+
+    /* 하단 QR 섹션 */
+    .info-qr-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 16px;
+    }
+
+    .info-qr-box {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border: 2px solid #111;
+      border-radius: 14px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-qr-label {
+      font-size: 13px;
+      font-weight: 900;
+      color: #111;
+    }
+
+    .info-qr-sub {
+      font-size: 9px;
+      font-weight: 500;
+      color: #999;
+    }
+
+    .info-store-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .info-store-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: #111;
+      border-radius: 6px;
+      padding: 5px 12px;
+      font-size: 9px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .info-store-btn svg {
+      width: 11px;
+      height: 11px;
+      fill: #fff;
+    }
+
+    .info-bottom-line {
+      width: 30px;
+      height: 1px;
+      background: #E0E0E0;
+      margin-top: 12px;
+    }
+
+    .info-bottom-event {
+      font-size: 8px;
+      font-weight: 500;
+      color: #bbb;
+      text-align: center;
+      line-height: 1.6;
+      margin-top: 6px;
+    }
+
+    .info-bottom-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #ccc;
+      margin-top: 4px;
+    }
+
+    /* 공통 QR SVG */
+    .qr-svg { width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+
+<!-- ============================
+     A. 홍보배너 (PROMO)
+     ============================ -->
+<div class="banner-wrapper">
+  <div class="banner-label">A. 홍보배너 <span class="sub">시선 끌기 · 입구 배치</span></div>
+
+  <div class="banner banner-promo">
+    <div class="promo-bg-glow"></div>
+    <div class="promo-bg-glow-bottom"></div>
+    <div class="corner-deco tl"></div>
+    <div class="corner-deco br"></div>
+
+    <div class="promo-content">
+
+      <!-- 로고 -->
+      <div class="promo-logo">THE CORNER</div>
+      <div class="promo-logo-divider"></div>
+      <div class="promo-logo-icon">
+        <svg viewBox="0 0 40 40" fill="none">
+          <path d="M20 4L36 20L20 36L4 20L20 4Z" stroke="#FF2D2D" stroke-width="2.5" fill="none"/>
+          <path d="M20 11L29 20L20 29L11 20L20 11Z" fill="#FF2D2D" opacity="0.25"/>
+          <circle cx="20" cy="20" r="3.5" fill="#FF2D2D"/>
+        </svg>
+      </div>
+      <div class="promo-logo-sub">복싱 종합 플랫폼</div>
+
+      <!-- CTA 문구 -->
+      <div class="promo-cta-block">
+        <div class="promo-cta-line">앱 다운 받고</div>
+        <div class="promo-cta-plus">+</div>
+        <div class="promo-cta-line">출석체크 하면</div>
+        <div style="height: 8px;"></div>
+        <div class="promo-cta-highlight">
+          🎁 특별 경품 증정!
+          <div class="underline-deco"></div>
+        </div>
+      </div>
+
+      <!-- 경품 -->
+      <div class="promo-prizes">
+        <div class="promo-prize">
+          <div class="promo-prize-label">🥇 1등상</div>
+          <div class="promo-prize-img">
+            <svg width="75" height="65" viewBox="0 0 80 65" fill="none">
+              <path d="M25 0L0 15L8 22L16 18V60C16 62.5 18 65 21 65H59C62 65 64 62.5 64 60V18L72 22L80 15L55 0H25Z" fill="#fff"/>
+              <path d="M30 5H50L52 8V55C52 56 51 57 50 57H30C29 57 28 56 28 55V8L30 5Z" fill="#f0f0f0"/>
+              <text x="40" y="32" text-anchor="middle" font-family="Bebas Neue" font-size="9" fill="#FF2D2D" font-weight="bold">THE</text>
+              <text x="40" y="42" text-anchor="middle" font-family="Bebas Neue" font-size="8" fill="#FF2D2D">CORNER</text>
+            </svg>
+          </div>
+          <div class="promo-prize-name">더 코너 한정판 티셔츠</div>
+        </div>
+        <div class="promo-prize">
+          <div class="promo-prize-label">🏅 참가상</div>
+          <div class="promo-prize-img">
+            <svg width="35" height="60" viewBox="0 0 35 65" fill="none">
+              <rect x="4" y="0" width="27" height="65" rx="4" fill="#0055BB"/>
+              <rect x="7" y="4" width="21" height="12" rx="2" fill="#fff" opacity="0.9"/>
+              <text x="17.5" y="11" text-anchor="middle" font-size="5" fill="#0055BB" font-weight="bold">파워</text>
+              <text x="17.5" y="22" text-anchor="middle" font-size="4" fill="#fff" font-weight="bold">에이드</text>
+              <rect x="7" y="14" width="21" height="4" rx="0.5" fill="#00AAFF"/>
+              <rect x="2" y="54" width="31" height="11" rx="3" fill="#003D88"/>
+            </svg>
+          </div>
+          <div class="promo-prize-name">파워에이드 음료수</div>
+        </div>
+      </div>
+
+      <!-- 참여 유도 -->
+      <div class="promo-guide-hint">
+        <div class="promo-guide-hint-icon">👉</div>
+        <div class="promo-guide-hint-text">
+          <strong>참여 방법</strong>은 옆 안내 배너를 확인하세요!<br>
+          또는 아래 QR을 스캔해 바로 시작하세요.
+        </div>
+      </div>
+
+      <!-- 하단 -->
+      <div class="promo-bottom">
+        <div class="promo-qr">
+          <svg class="qr-svg" viewBox="0 0 48 48" fill="none">
+            <rect x="3" y="3" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="5" y="5" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="7" y="7" width="4" height="4" fill="#000"/>
+            <rect x="33" y="3" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="35" y="5" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="37" y="7" width="4" height="4" fill="#000"/>
+            <rect x="3" y="33" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="5" y="35" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="7" y="37" width="4" height="4" fill="#000"/>
+            <rect x="18" y="3" width="3" height="3" fill="#000"/>
+            <rect x="24" y="6" width="3" height="3" fill="#000"/>
+            <rect x="18" y="9" width="3" height="3" fill="#000"/>
+            <rect x="3" y="18" width="3" height="3" fill="#000"/>
+            <rect x="9" y="21" width="3" height="3" fill="#000"/>
+            <rect x="18" y="18" width="3" height="3" fill="#000"/>
+            <rect x="36" y="18" width="3" height="3" fill="#000"/>
+            <rect x="42" y="21" width="3" height="3" fill="#000"/>
+            <rect x="3" y="24" width="3" height="3" fill="#000"/>
+            <rect x="27" y="24" width="3" height="3" fill="#000"/>
+            <rect x="42" y="27" width="3" height="3" fill="#000"/>
+            <rect x="18" y="30" width="3" height="3" fill="#000"/>
+            <rect x="33" y="33" width="3" height="3" fill="#000"/>
+            <rect x="42" y="36" width="3" height="3" fill="#000"/>
+            <rect x="18" y="42" width="3" height="3" fill="#000"/>
+            <rect x="27" y="42" width="3" height="3" fill="#000"/>
+            <rect x="36" y="42" width="3" height="3" fill="#000"/>
+            <rect x="18" y="18" width="12" height="12" rx="2" fill="#fff"/>
+            <text x="24" y="27" text-anchor="middle" font-family="Bebas Neue" font-size="6" fill="#000" font-weight="bold">APP</text>
+          </svg>
+        </div>
+        <div class="promo-store-row">
+          <div class="promo-store-btn">
+            <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.834 1.64a1 1 0 0 1 0 1.74l-2.834 1.64-2.544-2.544 2.544-2.476zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Google Play
+          </div>
+          <div class="promo-store-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </div>
+        </div>
+        <div class="promo-brand-bottom">THE CORNER</div>
+        <div class="promo-event-name">2026 제2회 용인특례시장배<br>전국생활체육복싱대회</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     B. 내용배너 (INFO)
+     ============================ -->
+<div class="banner-wrapper">
+  <div class="banner-label">B. 내용배너 <span class="sub">참여 안내 · 부스 배치</span></div>
+
+  <div class="banner banner-info">
+    <div class="info-content">
+
+      <!-- 상단 로고 -->
+      <div class="info-top-logo">THE CORNER</div>
+      <div class="info-top-divider"></div>
+
+      <!-- 타이틀 -->
+      <div class="info-title">이벤트 참여 안내</div>
+
+      <!-- 자격요건 -->
+      <div class="info-qualification">
+        <div class="info-qual-title">
+          <span class="info-qual-badge">필수</span>
+          참가 자격
+        </div>
+        <ul class="info-qual-list">
+          <li class="info-qual-item">
+            <div class="info-qual-dot"></div>
+            <span>복싱 체육관을 다니고 있는 분</span>
+          </li>
+          <li class="info-qual-item">
+            <div class="info-qual-dot"></div>
+            <span>성인 또는 미성년자 보호자 동행</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 참여 방법 -->
+      <div class="info-method-title">참여 방법</div>
+
+      <div class="info-steps">
+        <!-- Step 1 -->
+        <div class="info-step">
+          <div class="info-step-number">01</div>
+          <div class="info-step-content">
+            <div class="info-step-label">STEP 01</div>
+            <div class="info-step-title">앱 다운로드</div>
+            <div class="info-step-desc">아래 QR코드를 스캔하여<br>더코너 앱을 설치하세요</div>
+          </div>
+          <div class="info-step-visual">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect width="48" height="48" rx="11" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="1"/>
+              <path d="M24 10L36 24L24 38L12 24L24 10Z" stroke="#FF2D2D" stroke-width="1.5" fill="none"/>
+              <path d="M24 16L31 24L24 32L17 24L24 16Z" fill="#FF2D2D" opacity="0.2"/>
+              <circle cx="24" cy="24" r="3" fill="#FF2D2D"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="info-step-connector"></div>
+
+        <!-- Step 2 -->
+        <div class="info-step">
+          <div class="info-step-number">02</div>
+          <div class="info-step-content">
+            <div class="info-step-label">STEP 02</div>
+            <div class="info-step-title">회원가입</div>
+            <div class="info-step-desc">전화번호로 간편하게<br>회원가입을 완료하세요</div>
+          </div>
+          <div class="info-step-visual">
+            <svg width="44" height="52" viewBox="0 0 44 60" fill="none">
+              <rect x="2" y="0" width="40" height="60" rx="8" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="1"/>
+              <rect x="7" y="18" width="30" height="5" rx="2" fill="#E0E0E0"/>
+              <rect x="7" y="26" width="30" height="5" rx="2" fill="#E0E0E0"/>
+              <rect x="7" y="38" width="30" height="8" rx="3" fill="#FF2D2D"/>
+              <text x="22" y="44" text-anchor="middle" font-size="5" fill="#fff" font-weight="bold">가입</text>
+              <circle cx="22" cy="8" r="2" fill="#ccc"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="info-step-connector"></div>
+
+        <!-- Step 3 -->
+        <div class="info-step">
+          <div class="info-step-number">03</div>
+          <div class="info-step-content">
+            <div class="info-step-label">STEP 03</div>
+            <div class="info-step-title">출석하기</div>
+            <div class="info-step-desc">홈 화면에서 출석 버튼을 눌러<br>이벤트 참여를 완료하세요!</div>
+          </div>
+          <div class="info-step-visual">
+            <svg width="44" height="52" viewBox="0 0 44 60" fill="none">
+              <rect x="2" y="0" width="40" height="60" rx="8" fill="#F0F0F0" stroke="#E0E0E0" stroke-width="1"/>
+              <rect x="7" y="12" width="30" height="20" rx="3" fill="#E8E8E8"/>
+              <rect x="9" y="14" width="7" height="4" rx="1" fill="#FF2D2D" opacity="0.3"/>
+              <rect x="18" y="14" width="7" height="4" rx="1" fill="#FF2D2D" opacity="0.3"/>
+              <rect x="27" y="14" width="7" height="4" rx="1" fill="#FF2D2D" opacity="0.3"/>
+              <rect x="9" y="20" width="7" height="4" rx="1" fill="#FF2D2D" opacity="0.3"/>
+              <rect x="18" y="20" width="7" height="4" rx="1" fill="#FF2D2D"/>
+              <rect x="7" y="38" width="30" height="10" rx="4" fill="#FF2D2D"/>
+              <text x="22" y="45" text-anchor="middle" font-size="5" fill="#fff" font-weight="bold">출석</text>
+              <circle cx="22" cy="8" r="2" fill="#ccc"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 QR -->
+      <div class="info-qr-section">
+        <div class="info-qr-box">
+          <svg class="qr-svg" viewBox="0 0 48 48" fill="none">
+            <rect x="3" y="3" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="5" y="5" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="7" y="7" width="4" height="4" fill="#000"/>
+            <rect x="33" y="3" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="35" y="5" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="37" y="7" width="4" height="4" fill="#000"/>
+            <rect x="3" y="33" width="12" height="12" rx="1.5" fill="#000"/>
+            <rect x="5" y="35" width="8" height="8" rx="0.5" fill="#fff"/>
+            <rect x="7" y="37" width="4" height="4" fill="#000"/>
+            <rect x="18" y="3" width="3" height="3" fill="#000"/>
+            <rect x="24" y="6" width="3" height="3" fill="#000"/>
+            <rect x="18" y="9" width="3" height="3" fill="#000"/>
+            <rect x="3" y="18" width="3" height="3" fill="#000"/>
+            <rect x="9" y="21" width="3" height="3" fill="#000"/>
+            <rect x="18" y="18" width="3" height="3" fill="#000"/>
+            <rect x="36" y="18" width="3" height="3" fill="#000"/>
+            <rect x="42" y="21" width="3" height="3" fill="#000"/>
+            <rect x="3" y="24" width="3" height="3" fill="#000"/>
+            <rect x="27" y="24" width="3" height="3" fill="#000"/>
+            <rect x="42" y="27" width="3" height="3" fill="#000"/>
+            <rect x="18" y="30" width="3" height="3" fill="#000"/>
+            <rect x="33" y="33" width="3" height="3" fill="#000"/>
+            <rect x="42" y="36" width="3" height="3" fill="#000"/>
+            <rect x="18" y="42" width="3" height="3" fill="#000"/>
+            <rect x="27" y="42" width="3" height="3" fill="#000"/>
+            <rect x="36" y="42" width="3" height="3" fill="#000"/>
+            <rect x="18" y="18" width="12" height="12" rx="2" fill="#fff"/>
+            <text x="24" y="27" text-anchor="middle" font-family="Bebas Neue" font-size="6" fill="#000" font-weight="bold">APP</text>
+          </svg>
+        </div>
+        <div class="info-qr-label">QR코드를 스캔하세요</div>
+        <div class="info-qr-sub">카메라로 QR코드를 비추면 바로 다운로드됩니다</div>
+
+        <div class="info-store-row">
+          <div class="info-store-btn">
+            <svg viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.4l2.834 1.64a1 1 0 0 1 0 1.74l-2.834 1.64-2.544-2.544 2.544-2.476zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Google Play
+          </div>
+          <div class="info-store-btn">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </div>
+        </div>
+
+        <div class="info-bottom-line"></div>
+        <div class="info-bottom-event">2026 제2회 용인특례시장배<br>전국생활체육복싱대회</div>
+        <div class="info-bottom-brand">THE CORNER</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
